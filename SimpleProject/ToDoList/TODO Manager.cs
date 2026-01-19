@@ -11,7 +11,8 @@ namespace ToDoListManager
     public class Program
     {
         /// <summary>
-        ///  This runs a simple ToDo List Managing application
+        ///  This launches a simple ToDo List Managing application
+        ///  where user can add, remove and view the items in a todo list
         /// </summary>
         public static void Main(string[] args)
         {

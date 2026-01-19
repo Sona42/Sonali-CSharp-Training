@@ -14,9 +14,10 @@
             decimal operand2 = ValidateInputNumber(Console.ReadLine() ?? string.Empty);
 
             string operation;
+
             while (true)
             {
-                Console.WriteLine($"What do you want to do with those numbers?\n[A]dd\n[S]ubtract\n[M]ultiply\n[E]xit");
+                Console.WriteLine("What do you want to do with those numbers?\n[A]dd\n[S]ubtract\n[M]ultiply\n[E]xit");
                 operation = (Console.ReadLine() ?? string.Empty).Trim().ToLower();
 
                 if (operation == "a" || operation == "s" || operation == "m" || operation == "e")
@@ -61,11 +62,13 @@
         public decimal ValidateInputNumber(string input)
         {
             decimal number;
+
             while (!decimal.TryParse(input, out number))
             {
                 Console.WriteLine("Invalid Input. Re-enter a valid integer");
                 input = Console.ReadLine();
             }
+
             return number;
         }
 

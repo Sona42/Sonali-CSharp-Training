@@ -14,6 +14,7 @@
             while (!shallExit)
             {
                 string userSelection = GetUserSelection();
+
                 switch (userSelection)
                 {
                     // Display all available ToDos
@@ -80,6 +81,7 @@
         public void AddToDo(List<string> todoList)
         {
             string? newTodo;
+
             Console.WriteLine("Enter the TODO description");
             newTodo = Console.ReadLine();
 

@@ -3,7 +3,8 @@
     public class Program
     {
         /// <summary>
-        ///  This runs a simple calculator application
+        ///  This launches a simple calculator application
+        ///  Can perform operation such as addition,subtraction and multiplication
         /// </summary>
         public static void Main(string[] args)
         {
